@@ -3,11 +3,6 @@
 def gimmeSomeSpace():
     print()
     print()
-    print()
-    print()
-    print()
-    print()
-    print()
 
 
 list1 = ["something", "trafford", "hall", "another", "word", "jeff"]
