@@ -113,20 +113,24 @@ def checkDupB (list5):
 
 
 print(checkDupB(list5))
-                    
-    
+
+gimmeSomeSpace()
+
+##################################
 
 
-
-
-            
+def dupsInList (list5):
+    newList = [[list5[0]]]
+    for i in range(1, len(list5)):
         
+        a = i - 1
+        if list5[a] != list5[i]:
+            newList.append([list5[i]])
+        else:
+            newList[len(newList)-1].append(list5[a])
+            print(newList)
+    return newList
 
-        
-        
-        
+print(checkDupB(list5))
 
-
-    
-    
-
+print(dupsInList(list5) == [["jeff","jeff"],["bob","bob"], ["jeff", "jeff"], ["trafford","trafford"], ["jeff","jeff"]])    
