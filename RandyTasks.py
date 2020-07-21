@@ -9,7 +9,7 @@ list1 = ["something", "trafford", "hall", "another", "word", "something"]
 list2 = [0, 1, 2, 3, 4 ,5, 6, 7, 8, 9]
 list3 = ["something", "trafford", "hall", "hall", "trafford", "something"]
 list4 = [1, 2, 3, 4, 3, 2, 1]
-list5 = ["jeff","bob","bob","trafford", "trafford"]
+list5 = ["jeff","jeff","bob","bob", "jeff", "jeff", "trafford","trafford","jeff","jeff"]
 
 
 
@@ -97,7 +97,28 @@ def checkdup (list5):
             
 
 print(checkdup(list5))
-                
+
+gimmeSomeSpace()
+
+####################################
+
+def checkDupB (list5):
+    newlist2 = [list5[0]]
+    for i in range(1, len(list5)):
+        a = i - 1
+        print(a)
+        if list5[a] != list5[i]:
+            newlist2.append(list5[i])
+    return newlist2
+
+
+print(checkDupB(list5))
+                    
+    
+
+
+
+
             
         
 
