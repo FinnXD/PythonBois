@@ -9,7 +9,7 @@ list1 = ["something", "trafford", "hall", "another", "word", "something"]
 list2 = [0, 1, 2, 3, 4 ,5, 6, 7, 8, 9]
 list3 = ["something", "trafford", "hall", "hall", "trafford", "something"]
 list4 = [1, 2, 3, 4, 3, 2, 1]
-list5 = ["jeff","jeff","bob","bob", "jeff", "jeff", "trafford","trafford","jeff","jeff"]
+list5 = ["jeff","jeff","bob","bob", "jeff", "jeff", "trafford","trafford","jeff","jeff","barry","cole"]
 
 
 
@@ -153,7 +153,21 @@ def amountOfDups(startingList):
         
 print(amountOfDups(list5))
 
-######################################
+###################################
+
+
+def amountOfDupsSingle(startingList):
+    finalList = []
+    splitList = (dupsInList(startingList)) 
+    for i in range (len(splitList)):
+        a = len(splitList[i])
+        if a == 1 :
+            finalList.append(splitList[i][0])
+        else:
+            finalList.append([a, splitList[i][0]])
+    return finalList
+        
+print(amountOfDupsSingle(list5))
         
     
         
