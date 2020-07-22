@@ -77,7 +77,7 @@ print (backToFront(list1))
 
 
 print (backToFront(list3))
-
+ 
 gimmeSomeSpace()
 
 ####################################
@@ -127,10 +127,33 @@ def dupsInList (list5):
         if list5[a] != list5[i]:
             newList.append([list5[i]])
         else:
-            newList[len(newList)-1].append(list5[a])
+            newList[len(newList)-1 ].append(list5[a])
             print(newList)
     return newList
 
 print(checkDupB(list5))
 
+
+
+
 print(dupsInList(list5) == [["jeff","jeff"],["bob","bob"], ["jeff", "jeff"], ["trafford","trafford"], ["jeff","jeff"]])    
+
+
+gimmeSomeSpace()
+
+####################################
+
+def amountOfDups(startingList):
+    finalList = []
+    splitList = (dupsInList(startingList)) 
+    for i in range (len(splitList)):
+        a = len(splitList[i])
+        finalList.append([a, splitList[i][0]])
+    return finalList
+        
+print(amountOfDups(list5))
+
+######################################
+        
+    
+        
