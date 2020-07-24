@@ -186,6 +186,77 @@ def reverseDup(startingList):
 
 print(reverseDup(amountOfDups(list5)))
 
+gimmeSomeSpace()
+
+################################
+
+def dupsdups(startingList, amount):    
+    finalList = []
+    firstThingInList = startingList[0]
+    for n in range (len(startingList)):
+        for i in range (amount):
+            finalList.append(startingList[n])
+
+        
+        
+    return finalList
+    
+
+    
+
+oneList = ["a", "b", "c"]
+print(dupsdups(oneList, 3) == ["a", "a", "a", "b", "b", "b", "c", "c", "c"])
+
+print(dupsdups(oneList, 3))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
         
         
