@@ -128,7 +128,6 @@ def dupsInList (list5):
             newList.append([list5[i]])
         else:
             newList[len(newList)-1 ].append(list5[a])
-            print(newList)
     return newList
 
 print(checkDupB(list5))
@@ -168,6 +167,28 @@ def amountOfDupsSingle(startingList):
     return finalList
         
 print(amountOfDupsSingle(list5))
+
+gimmeSomeSpace()
         
+####################################    
+
+def reverseDup(startingList):
+    finalList = []
+    for n in range (len(startingList)):
+        numberInList = (startingList[n][0])
+        actualWordInList = (startingList[n][1])
+        currentList = []
+        for i in range(numberInList):
+            currentList.append(actualWordInList)
+        finalList.append(currentList)
+    return finalList
+
+
+print(reverseDup(amountOfDups(list5)))
+
     
         
+        
+    
+    
+
