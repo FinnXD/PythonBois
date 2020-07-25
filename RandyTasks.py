@@ -209,8 +209,22 @@ print(dupsdups(oneList, 3) == ["a", "a", "a", "b", "b", "b", "c", "c", "c"])
 
 print(dupsdups(oneList, 3))
 
+####################################
 
+def removeList(startingList, removedNumber):
+    finalList = []
+    for i in range (len(startingList)):
+         if (i + 1) % removedNumber != 0:
+            finalList.append(startingList[i])
+            
+            
+            
+        
+    return finalList
 
+randyList = [1,2,3,4,5,6,7,8,9, 10, 11, 12, 13, 14, 15]
+
+print(removeList(randyList, 3))
 
 
 
