@@ -226,11 +226,23 @@ randyList = [1,2,3,4,5,6,7,8,9, 10, 11, 12, 13, 14, 15]
 
 print(removeList(randyList, 3))
 
+gimmeSomeSpace()
 
+######################################
 
-
-
-
+def splitList(startingList,whereSplit):
+    firstHalf = []
+    secondHalf = []
+    theRest = len(startingList) - (whereSplit)
+    for i in range (whereSplit):
+        firstHalfOfList = firstHalf.append(startingList[i])
+    for n in range (theRest):
+        secondHalfOfList = secondHalf.append(startingList[n+whereSplit])
+    finalList = [firstHalf]+[secondHalf]
+       
+        
+    return finalList
+print(splitList(list5, 4))
 
 
 
