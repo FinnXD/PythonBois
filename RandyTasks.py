@@ -244,6 +244,35 @@ def splitList(startingList,whereSplit):
     return finalList
 print(splitList(list5, 4))
 
+#######################################
+
+def chooseSplitList(startingList,placeOne,placeTwo):
+    finalList = []
+    firstBit = len(startingList) - (placeTwo)
+    for i in range (len(startingList)):
+        if i + 1 > (placeOne) and i < (placeTwo):
+            finalList.append(startingList[i])
+
+    return finalList
+
+print(chooseSplitList(list5, 2, 7))
+
+
+
+
+
+    
+#def chooseSplitList(startingList,placeOne,placeTwo):
+ #   finalList = []
+  #  firstBit = len(startingList) - (placeTwo)
+   # for i in range (firstBit):
+    #    finalList.append(startingList[i+placeOne])
+
+     
+
+    #return finalList
+
+#print(chooseSplitList(list5, 2, 1))
 
 
 
